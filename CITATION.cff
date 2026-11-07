@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this dashboard, please cite the underlying study."
+title: "Edwards Aquifer Counterfactual Dashboard"
+type: software
+authors:
+  - name: "Edwards Aquifer Counterfactual Dashboard contributors"
+preferred-citation:
+  type: article
+  title: "Efficacy of mitigation strategies for aquifer sustainability under climate change"
+  authors:
+    - family-names: Sharma
+      given-names: Chetan
+    - family-names: Başağaoğlu
+      given-names: Hakan
+    - family-names: Yoosefdoost
+      given-names: Icen
+    - family-names: Wootten
+      given-names: Adrienne
+    - family-names: Chakraborty-Reddy
+      given-names: Debarati
+    - family-names: Bertetti
+      given-names: F. Paul
+    - family-names: Mirchi
+      given-names: Ali
+    - family-names: Chakraborty
+      given-names: Debaditya
+  journal: Nature Sustainability
+  year: 2025
+  volume: 8
+  start: 44
+  end: 53
+  doi: 10.1038/s41893-024-01477-6
