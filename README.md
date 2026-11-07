@@ -21,7 +21,7 @@ python build_page.py
 python build_page.py --check
 ```
 
-Edit `dashboard_template.html` for dashboard changes. Commit the regenerated `docs/index.html` alongside any template or JSON changes. The GitHub Actions check verifies that the generated page matches both inputs.
+Edit `dashboard_template.html`, `dashboard.css`, or `dashboard.js` for dashboard changes. Commit the regenerated `docs/index.html` alongside any source or JSON changes. The GitHub Actions check verifies that the generated page matches all of them.
 
 ## Regenerate the dataset
 
@@ -53,8 +53,10 @@ For a fresh checkout, export the published capsule and point `--capsule-dir` at 
 | --- | --- |
 | `build_data.py` | Extracts dashboard metrics and chart series from the capsule workbooks. |
 | `dashboard_data.json` | Tracked snapshot of the derived chart data. |
-| `dashboard_template.html` | Dashboard markup, styles, and SVG chart logic. |
-| `build_page.py` | Embeds the snapshot and checks the generated page. |
+| `dashboard_template.html` | Dashboard markup, with placeholders for the styles, script, and data. |
+| `dashboard.css` | Dashboard styles. |
+| `dashboard.js` | SVG chart rendering and interaction logic. |
+| `build_page.py` | Embeds the template, styles, script, and snapshot, and checks the generated page. |
 | `docs/index.html` | Standalone, generated site entry point. |
 | `fetch_capsule.sh` | Optional downloader for the workbook inputs. |
 | [DATA.md](DATA.md) | Source inventory, workbook layout, transformations, and scope. |
